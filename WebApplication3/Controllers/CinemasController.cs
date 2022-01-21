@@ -5,23 +5,42 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication3.Data;
+using WebApplication3.Data.Services;
+using WebApplication3.Models;
 
 namespace WebApplication3.Controllers
 {
     public class CinemasController : Controller
     {
-        private readonly AppDbContext _context; //calling appdbcontext to access the context
+        private readonly ICinemaService _service; //calling appdbcontext to access the context
 
         //to access the context a constructor is required
-        public CinemasController(AppDbContext context)
+        public CinemasController(ICinemaService service)
         {
-            _context = context;
+            _service = service;
         }
 
         public async Task<IActionResult> Index()
         {
-            var allCinemas = await _context.Cinema.ToListAsync();
+            var allCinemas = await _service.GetAllAsync();
             return View(allCinemas);
         }
+
+        //Get: Cinemas/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([Bind("Logo,Name,Description")] Cinema cinema)
+        {
+            if (!ModelState.IsValid) return View(cinema);
+            await _service.AddAsync(cinema);
+            return RedirectToAction(nameof(Index));
+        }
+
+
+
     }
 }

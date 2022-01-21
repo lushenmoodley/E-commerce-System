@@ -21,7 +21,7 @@ namespace WebApplication3.Controllers
 
         public async Task<IActionResult> Index()//the task in the method is used for data-manipulation
         {
-            var data = await _service.GetAll();
+            var data = await _service.GetAllAsync();
             return View(data);
         }
         //Get request
@@ -39,12 +39,74 @@ namespace WebApplication3.Controllers
             {
                 return View(actor);
             }
-            _service.Add(actor);
+            await _service.AddAsync(actor);
 
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> Details(int id)
+        {
+            var actorDetails = await _service.GetByIdAsync(id);
+           
+            if(actorDetails==null)
+            {
+                return View("Not Found");
+            }
 
+            return View(actorDetails);
+        
+        }
 
+        //Get request
+        public async Task<IActionResult> Edit(int id)
+        {
+            var actorDetails = await _service.GetByIdAsync(id);
+            if (actorDetails == null)
+            {
+                return View("Not Found");
+            }
+
+            return View(actorDetails);
+        }
+
+        //Get request
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id,[Bind("FullName,ProfilePictureURL,Bio")] Actor actor)//check the updated id against the parameter values
+        {
+            actor.Id = id;
+
+            if(!ModelState.IsValid)
+            {
+                return View(actor);
+            }
+
+            await _service.UpdateAsync(id,actor);
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            var actorDetails = await _service.GetByIdAsync(id);
+            if (actorDetails == null)
+            {
+                return View("Not Found");
+            }
+
+            return View(actorDetails);
+        }
+
+        //Get request
+        [HttpPost,ActionName("Delete")]//Delete can be used instead of deleteconfirmed with the http post
+        public async Task<IActionResult> DeleteConfirmed(int id)//check the updated id against the parameter values
+        {
+            var actorDetails = await _service.GetByIdAsync(id);
+
+            if (actorDetails == null)
+            
+                return View("Not Found");
+            
+            await _service.DeleteAsync(id);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
