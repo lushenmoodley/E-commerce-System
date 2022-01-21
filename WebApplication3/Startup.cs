@@ -31,7 +31,10 @@ namespace WebApplication3
             services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
 
             //Services Configuration
+            services.AddScoped<ICinemaService, CinemasService>();
+            services.AddScoped<IProducersService, ProducersService>();
             services.AddScoped<IActorsServices, ActorsService>();
+            services.AddScoped<IMoviesService, MoviesService>();
 
             services.AddControllersWithViews();
         }
