@@ -4,12 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebApplication3.Data;
+using WebApplication3.Data.Cart;
 using WebApplication3.Data.Services;
 
 namespace WebApplication3
@@ -35,6 +37,10 @@ namespace WebApplication3
             services.AddScoped<IProducersService, ProducersService>();
             services.AddScoped<IActorsServices, ActorsService>();
             services.AddScoped<IMoviesService, MoviesService>();
+            services.AddScoped<IOrdersService, OrdersService>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped(sc =>ShoppingCart.GetShoppingCart(sc));
+            services.AddSession();
 
             services.AddControllersWithViews();
         }
@@ -56,6 +62,7 @@ namespace WebApplication3
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseSession();
 
             app.UseAuthorization();
 
