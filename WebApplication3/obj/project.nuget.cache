@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+tjwI/lWHrCPyjV56BIYG+rAm7DFtikwPRB9UOk9HWuyFc9eK9Iym/ScsjwROo9N+WrZjZBJ2b5hc9Iusx3gIA==",
+  "dgSpecHash": "ad8dmKd68NGwCwURLEDk8gfQXgrrj0OKvc6Z3cykBogsPqsJ0P9oLB+5XjWfWZqRWL+CunGTJvnGYq7revT6qQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lushe\\OneDrive\\Desktop\\WebApplication3\\WebApplication3\\WebApplication3.csproj",
+  "projectFilePath": "C:\\Users\\lushe\\OneDrive\\Desktop\\E-commerce-System\\WebApplication3\\WebApplication3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lushe\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lushe\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.13\\microsoft.aspnetcore.cryptography.internal.5.0.13.nupkg.sha512",
