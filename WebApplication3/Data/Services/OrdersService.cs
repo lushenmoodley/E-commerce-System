@@ -16,10 +16,16 @@ namespace WebApplication3.Data.Services
             _context = context;
         }
 
-        public async Task<List<Order>> GetOrdersByUserIdAsync(string userId)
+        public async Task<List<Order>> GetOrdersByUserIdAndRoleAsync(string userId,string userRole)
         {
             /* var orders = await _context.Orders.Include(n => n.OrderItems).ThenInclude(n => n.Movie).Include(n => n.UserId).ToListAsync(); */
             var orders = await _context.Orders.Include(n => n.OrderItems).ThenInclude(n => n.Movie).ToListAsync();
+           
+            if(userRole != "Admin")
+            {
+                orders = orders.Where(n => n.UserId == userId).ToList();
+            }
+            
             return orders;
         }
 
@@ -46,7 +52,8 @@ namespace WebApplication3.Data.Services
 
                 await _context.OrderItems.AddAsync(orderItem);
                 await _context.SaveChangesAsync();
-            }
+
+             }
 
             
         }

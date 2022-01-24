@@ -26,8 +26,15 @@ using WebApplication3.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\lushe\OneDrive\Desktop\WebApplication3\WebApplication3\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"55d035d96e35f2d1fa6e43869482643e02b4a749", @"/Views/Movies/Details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"463d1c12e8fc14b2589daa67feec3183fea97611", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b9f8fb492687d67e370226924ce18737b3684a28", @"/Views/_ViewImports.cshtml")]
     public class Views_Movies_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Movie>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Cinemas", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -116,7 +123,7 @@ WriteAttributeValue("", 642, Model.Name, 642, 11, false);
 #line hidden
 #nullable disable
             WriteLiteral("</p>\n                        <p class=\"card-text\">\n                            <b>Cinema: </b>\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55d035d96e35f2d1fa6e43869482643e02b4a7498006", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55d035d96e35f2d1fa6e43869482643e02b4a7498214", async() => {
                 WriteLiteral("\n                                ");
 #nullable restore
 #line 27 "C:\Users\lushe\OneDrive\Desktop\WebApplication3\WebApplication3\Views\Movies\Details.cshtml"
@@ -157,7 +164,7 @@ WriteAttributeValue("", 642, Model.Name, 642, 11, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                        </p>\n                        <p class=\"card-text\">\n                            <b>Producer: </b>\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55d035d96e35f2d1fa6e43869482643e02b4a74910892", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55d035d96e35f2d1fa6e43869482643e02b4a74911100", async() => {
                 WriteLiteral("\n                                ");
 #nullable restore
 #line 33 "C:\Users\lushe\OneDrive\Desktop\WebApplication3\WebApplication3\Views\Movies\Details.cshtml"
@@ -278,7 +285,7 @@ WriteAttributeValue("", 2765, actor.Actor.ProfilePictureURL, 2765, 30, false);
 #nullable disable
             EndWriteAttribute();
             WriteLiteral(" style=\"max-width: 150px\" />\n                        <br />\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55d035d96e35f2d1fa6e43869482643e02b4a74917534", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55d035d96e35f2d1fa6e43869482643e02b4a74917742", async() => {
 #nullable restore
 #line 60 "C:\Users\lushe\OneDrive\Desktop\WebApplication3\WebApplication3\Views\Movies\Details.cshtml"
                                                                                                  Write(actor.Actor.FullName);
@@ -333,7 +340,7 @@ WriteAttributeValue("", 2765, actor.Actor.ProfilePictureURL, 2765, 30, false);
                     <div class=""card-footer"">
                         <p class=""card-text"">
                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55d035d96e35f2d1fa6e43869482643e02b4a74920740", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55d035d96e35f2d1fa6e43869482643e02b4a74920948", async() => {
                 WriteLiteral("\n                                Back to List\n                            ");
             }
             );
@@ -350,7 +357,7 @@ WriteAttributeValue("", 2765, actor.Actor.ProfilePictureURL, 2765, 30, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55d035d96e35f2d1fa6e43869482643e02b4a74922075", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55d035d96e35f2d1fa6e43869482643e02b4a74922283", async() => {
                 WriteLiteral("<i class=\"bi bi-cart-plus\"></i> Add to Cart (Price ");
 #nullable restore
 #line 76 "C:\Users\lushe\OneDrive\Desktop\WebApplication3\WebApplication3\Views\Movies\Details.cshtml"
