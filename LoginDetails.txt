@@ -1,10 +1,12 @@
-Login
-
-Email Address:lushenmoodley06@gmail.com
-Password:#Super12345!
+Login Details:
 
 Admin account
+-------------
 Email Address:admin@etickets.com
 Password:#Super12345!
 
-d434189b-e39e-45a4-bfb8-905838f425e6
+Customer Account
+----------------
+Email Address:lushenmoodley06@gmail.com
+Password:#Super12345!
+
