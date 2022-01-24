@@ -27,6 +27,13 @@ using WebApplication3.Models;
 #line hidden
 #nullable disable
 #nullable restore
+#line 3 "C:\Users\lushe\OneDrive\Desktop\WebApplication3\WebApplication3\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\lushe\OneDrive\Desktop\WebApplication3\WebApplication3\Views\Orders\ShoppingCart.cshtml"
 using WebApplication3.Data.ViewModels;
 
@@ -34,7 +41,7 @@ using WebApplication3.Data.ViewModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4ada4cb07dea63cadf17d8a32d6339734ead0811", @"/Views/Orders/ShoppingCart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"463d1c12e8fc14b2589daa67feec3183fea97611", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b9f8fb492687d67e370226924ce18737b3684a28", @"/Views/_ViewImports.cshtml")]
     public class Views_Orders_ShoppingCart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ShoppingCartVM>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("text-danger"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -139,7 +146,7 @@ using WebApplication3.Data.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n        <td class=\"align-middle\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ada4cb07dea63cadf17d8a32d6339734ead08119041", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ada4cb07dea63cadf17d8a32d6339734ead08119249", async() => {
                 WriteLiteral("\r\n                <i class=\"bi bi-cart-dash\"></i>\r\n            ");
             }
             );
@@ -173,7 +180,7 @@ using WebApplication3.Data.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n            |\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ada4cb07dea63cadf17d8a32d6339734ead081111572", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ada4cb07dea63cadf17d8a32d6339734ead081111780", async() => {
                 WriteLiteral("\r\n                <i class=\"bi bi-cart-plus\"></i>\r\n            ");
             }
             );
@@ -224,7 +231,7 @@ using WebApplication3.Data.ViewModels;
 #nullable disable
             WriteLiteral("\r\n                    </td>\r\n                    <td></td>\r\n                </tr>\r\n            </tfoot>\r\n        </table>\r\n\r\n        <div class=\"text-right\">\r\n            <div class=\"btn-group\">\r\n");
             WriteLiteral("                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ada4cb07dea63cadf17d8a32d6339734ead081115073", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ada4cb07dea63cadf17d8a32d6339734ead081115281", async() => {
                 WriteLiteral("\r\n                    Complete Order\r\n                ");
             }
             );
@@ -243,7 +250,7 @@ using WebApplication3.Data.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                <span style=\"padding:5px\"></span>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ada4cb07dea63cadf17d8a32d6339734ead081116641", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ada4cb07dea63cadf17d8a32d6339734ead081116849", async() => {
                 WriteLiteral("\r\n                    Add more items\r\n                ");
             }
             );
