@@ -12,9 +12,11 @@ namespace WebApplication3.Data.Services
     {
 
         Task<Movie> GetMovieByIdAsync(int id);
+        Task<Movie> GetMovieByActorIdAsync(int id);
         Task<NewMovieDropDownVM> GetNewMovieDropDownValues();
         Task AddNewMovieAsync(NewMovieVM data);
-        Task UpdateMovieAsync(NewMovieVM data);
+        Task UpdateMovieAsync(NewMovieVM data);   
+        
 
     }
 }

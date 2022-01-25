@@ -59,7 +59,7 @@ namespace WebApplication3.Data.Services
 
             return movieDetails;
 
-        }
+        }       
 
         public async Task<NewMovieDropDownVM> GetNewMovieDropDownValues()
         {
@@ -105,6 +105,11 @@ namespace WebApplication3.Data.Services
                 await _context.Actors_Movies.AddAsync(newActorMovie);
             }
             await _context.SaveChangesAsync();
+        }
+
+        Task<Movie> IMoviesService.GetMovieByActorIdAsync(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

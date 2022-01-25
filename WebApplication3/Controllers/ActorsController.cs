@@ -12,11 +12,13 @@ namespace WebApplication3.Controllers
     public class ActorsController : Controller
     {
         private readonly IActorsServices _service; //calling appdbcontext to access the context
+        private readonly IMoviesService _serviceMovie;
 
         //to access the context a constructor is required
-        public ActorsController(IActorsServices service)
+        public ActorsController(IActorsServices service, IMoviesService serviceMovie)
         {
             _service = service;
+            _serviceMovie = serviceMovie;
         }
 
         public async Task<IActionResult> Index()//the task in the method is used for data-manipulation
@@ -102,9 +104,11 @@ namespace WebApplication3.Controllers
             var actorDetails = await _service.GetByIdAsync(id);
 
             if (actorDetails == null)
-            
+            {
                 return View("Not Found");
-            
+                
+            }
+
             await _service.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
         }

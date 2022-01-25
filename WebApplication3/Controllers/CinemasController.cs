@@ -13,11 +13,13 @@ namespace WebApplication3.Controllers
     public class CinemasController : Controller
     {
         private readonly ICinemaService _service; //calling appdbcontext to access the context
+        private readonly IMoviesService _serviceMovie;
 
         //to access the context a constructor is required
-        public CinemasController(ICinemaService service)
+        public CinemasController(ICinemaService service, IMoviesService serviceMovie)
         {
             _service = service;
+            _serviceMovie = serviceMovie;
         }
 
         public async Task<IActionResult> Index()
@@ -75,10 +77,19 @@ namespace WebApplication3.Controllers
         public async Task<IActionResult> DeleteConfirm(int id)
         {
             var cinemaDetails = await _service.GetByIdAsync(id);
+            var allMovies = await _serviceMovie.GetAllAsync(n => n.Cinema); //Ordering movies by their names          
+            var filterResult = allMovies.Where(n => n.CinemaId.Equals(id)).ToList();
+
             if (cinemaDetails == null) return View("NotFound");
+
+            if (filterResult != null)
+            {
+                return View("AssignedCinema");
+            }
 
             await _service.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
+
         }
 
 
