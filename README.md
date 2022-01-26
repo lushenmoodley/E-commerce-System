@@ -31,5 +31,5 @@ Email Address:phil@gmail.com
 Password:#Super12345!
 
 
-The connection string for the codebase is setup with the live server.(Please refer to appsetting.json)
+The connection string for the codebase is setup with the live server.(Please refer to appsetting.json). So you can just download the program from github and it should run on your local machine.
 
