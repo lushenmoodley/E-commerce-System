@@ -181,7 +181,6 @@ C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netc
 C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Account\RegisterCompleted.cshtml.g.cs
 C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Account\Users.cshtml.g.cs
 C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Actors\Create.cshtml.g.cs
-C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Actors\Delete.cshtml.g.cs
 C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Actors\Details.cshtml.g.cs
 C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Actors\Edit.cshtml.g.cs
 C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Actors\Index.cshtml.g.cs
@@ -224,6 +223,6 @@ C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netc
 C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\WebApplication3.genruntimeconfig.cache
 C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AssignedCinema.cshtml.g.cs
 C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AssignedProducers.cshtml.g.cs
-C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AssignedActors.cshtml.g.cs
 C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Index.cshtml.g.cs
 C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\obj\Debug\netcoreapp3.1\WebApplication3.csprojAssemblyReference.cache
+C:\Users\lushe\OneDrive\Desktop\E-commerce-System\WebApplication3\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\eticket-app - Web Deploy\profile.arm.json
