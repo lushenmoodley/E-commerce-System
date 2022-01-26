@@ -3,6 +3,7 @@ About the system
 This is an eticket system,where a user can order movie tickets online.The system as the following features
 
 The admin can do the following
+
 -They can create,delete,update and view details relating to a cinema,producer.
 -They can create and edit a movie(product). 
 -They can create and edit an actor
@@ -11,6 +12,7 @@ The admin can do the following
 -They can view system users
 
 The end user can do the following:
+
 -They can order movie tickets
 -They can track their order
 
