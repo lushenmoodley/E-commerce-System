@@ -84,33 +84,6 @@ namespace WebApplication3.Controllers
 
             await _service.UpdateAsync(id,actor);
             return RedirectToAction(nameof(Index));
-        }
-
-        public async Task<IActionResult> Delete(int id)
-        {
-            var actorDetails = await _service.GetByIdAsync(id);
-            if (actorDetails == null)
-            {
-                return View("Not Found");
-            }
-
-            return View(actorDetails);
-        }
-
-        //Get request
-        [HttpPost,ActionName("Delete")]//Delete can be used instead of deleteconfirmed with the http post
-        public async Task<IActionResult> DeleteConfirmed(int id)//check the updated id against the parameter values
-        {
-            var actorDetails = await _service.GetByIdAsync(id);
-
-            if (actorDetails == null)
-            {
-                return View("Not Found");
-                
-            }
-
-            await _service.DeleteAsync(id);
-            return RedirectToAction(nameof(Index));
-        }
+        }       
     }
 }
