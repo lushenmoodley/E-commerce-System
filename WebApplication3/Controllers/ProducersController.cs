@@ -100,14 +100,15 @@ namespace WebApplication3.Controllers
         {
             var producerDetails = await _service.GetByIdAsync(id);
             var allMovies = await _serviceMovie.GetAllAsync(n => n.Cinema); //Ordering movies by their names          
-            var filterResult = allMovies.Where(n => n.ProducerId.Equals(id)).ToList();
+            int filterResult = allMovies.Where(n => n.ProducerId.Equals(id)).ToList().Count;
 
             if (producerDetails == null)
             {
                 return View("Not Found");
             }
 
-            if (filterResult != null)
+
+            if (filterResult > 0)
             {
                 return View("AssignedProducers");
             }

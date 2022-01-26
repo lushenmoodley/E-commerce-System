@@ -78,11 +78,14 @@ namespace WebApplication3.Controllers
         {
             var cinemaDetails = await _service.GetByIdAsync(id);
             var allMovies = await _serviceMovie.GetAllAsync(n => n.Cinema); //Ordering movies by their names          
-            var filterResult = allMovies.Where(n => n.CinemaId.Equals(id)).ToList();
+            int filterResult = allMovies.Where(n => n.CinemaId.Equals(id)).ToList().Count;
 
-            if (cinemaDetails == null) return View("NotFound");
+            if (cinemaDetails == null)
+            {
+                return View("NotFound");
+            }
 
-            if (filterResult != null)
+            if (filterResult > 0)
             {
                 return View("AssignedCinema");
             }
