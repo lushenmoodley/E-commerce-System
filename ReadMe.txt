@@ -31,4 +31,10 @@ Password:#Super12345!
 
 The codebase can be retrived from github(https://github.com/lushenmoodley/E-commerce-System)
 The connection string for the codebase is setup with the live server.(Please refer to appsetting.json)
+The code base is connected to the live azure server. So you can run the codebase from any local machine using Visual Studio 2019.
+Any machine using sql server management studio can connect to the azure server, please find server details below:
 
+Server Details:
+Server Name:eticket-app.database.windows.net
+Login:eticket-admin
+Password:#Super12345!
